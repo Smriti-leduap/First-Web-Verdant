@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-plant-primary: #2d5a27;
+  --color-plant-secondary: #8b9d77;
+  --color-plant-bg: #f9faec;
+  --color-plant-accent: #e5b181;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-plant-bg);
+    color: #333333;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  
+  ::selection {
+    background-color: var(--color-plant-accent);
+    color: white;
+  }
+}
